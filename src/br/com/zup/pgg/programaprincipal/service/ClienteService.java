@@ -3,19 +3,21 @@ package br.com.zup.pgg.programaprincipal.service;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import br.com.zup.pgg.programaprincipal.dao.ClienteDao;
 import br.com.zup.pgg.programaprincipal.entity.Cliente;
 
+@Service
 public class ClienteService {
 	ClienteDao clienteDao = new ClienteDao();
 
-	public Cliente adicionaCliente(Cliente cliente) {
+	public void insereCliente(Cliente cliente) {
 		clienteDao.insereCliente(cliente);
-
-		return cliente;
+		
 	}
 
-	public List<Cliente> buscaCliente(String cpf) {
+	public List<Cliente> buscaClientes(String cpf) {
 
 		if (cpf != null) {
 			List<Cliente> listaCliente = new ArrayList();
@@ -36,7 +38,7 @@ public class ClienteService {
 
 	}
 
-	public void excluirCadastro(String cpf) {
+	public void deletaCliente(String cpf) {
 
 		clienteDao.deletaCliente(cpf);
 	}

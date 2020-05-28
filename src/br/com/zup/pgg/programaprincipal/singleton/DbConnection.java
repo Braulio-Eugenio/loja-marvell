@@ -2,6 +2,7 @@ package br.com.zup.pgg.programaprincipal.singleton;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.SQLException;
 
 public class DbConnection {
 public static Connection connection = null;
@@ -23,5 +24,16 @@ public static Connection connection = null;
 		return connection;
 		
 	}
+	public static void close(Connection connection)
+    {
+        try {
+            if (connection != null) {
+                connection.close();
+                connection=null;
+            }
+		} catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 
 }

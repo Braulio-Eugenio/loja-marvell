@@ -16,8 +16,9 @@ import com.google.gson.Gson;
 import br.com.zup.pgg.programaprincipal.entity.Cliente;
 import br.com.zup.pgg.programaprincipal.service.ClienteService;
 
-public class ClineteController {
-	@WebServlet(urlPatterns = "/clientes")
+
+public class ClienteControllerServlet {
+	@WebServlet
 	public class ControllerCliente extends HttpServlet {
 		private static final String CATACTERE_POSICAO_INICIAL = "/";
 		private static final int ACRESCENTA_UMA_POSICAO = 1;
@@ -25,22 +26,22 @@ public class ClineteController {
 		ClienteService clienteService = new ClienteService();
 		Gson gson = new Gson();
 
-		@Override
+	/*	@Override
 		protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 			String json = req.getReader().lines().collect(Collectors.joining());
 			Cliente clienteRequest = gson.fromJson(json, Cliente.class);
-			Cliente clienteResposnse = clienteService.adicionaCliente(clienteRequest);
+			Cliente clienteResposnse = clienteService.insereClinete(clienteRequest);
 			String clienteJson = gson.toJson(clienteResposnse);
 			PrintWriter out = resp.getWriter();
 			out.print(clienteJson);
 			out.flush();
 
-		}
+		}*/
 
 		@Override
 		protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 			String cpf = req.getParameter("cpf");
-			List<Cliente> listaDeCliente = clienteService.buscaCliente(cpf);
+			List<Cliente> listaDeCliente = clienteService.buscaClientes(cpf);
 			String clienteJson = gson.toJson(listaDeCliente);
 			PrintWriter out = resp.getWriter();
 			out.print(listaDeCliente);
@@ -69,7 +70,7 @@ public class ClineteController {
 			String uri = req.getRequestURI();
 			int indexParam = uri.lastIndexOf(CATACTERE_POSICAO_INICIAL);
 			String cpf = uri.substring(indexParam + ACRESCENTA_UMA_POSICAO);
-			clienteService.excluirCadastro(cpf);
+			clienteService.deletaCliente(cpf);
 		}
 
 	}

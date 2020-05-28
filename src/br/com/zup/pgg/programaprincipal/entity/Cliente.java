@@ -1,5 +1,8 @@
 package br.com.zup.pgg.programaprincipal.entity;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+@EntityScan
 public class Cliente {
 	private String nome;
 	private int idade;
