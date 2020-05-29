@@ -13,30 +13,27 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<dependencies>
-<<<<<<< HEAD
+
 
 		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
-=======
->>>>>>> 19a24962be5d9aa5507f8c1ae3e513d8443d0944
+
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 		</dependency>
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 19a24962be5d9aa5507f8c1ae3e513d8443d0944
+
+
 		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-<<<<<<< HEAD
+
 		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-thymeleaf -->
 		
-=======
->>>>>>> 19a24962be5d9aa5507f8c1ae3e513d8443d0944
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -51,7 +48,7 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-<<<<<<< HEAD
+
 			</plugin>
 
 			<plugin>
@@ -67,8 +64,7 @@
 				<configuration>
 					<warSourceDirectory>WebContent</warSourceDirectory>
 				</configuration>
-=======
->>>>>>> 19a24962be5d9aa5507f8c1ae3e513d8443d0944
+
 			</plugin>
 			
 		</plugins>

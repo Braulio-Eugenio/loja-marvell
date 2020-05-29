@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-<<<<<<< HEAD
             
     
     <wb-module deploy-name="loja-marvall-0.0.1-SNAPSHOT">
@@ -20,33 +19,5 @@
     
     </wb-module>
         
-=======
-                
-    
-    
-    <wb-module deploy-name="loja-marvell-0.0.1-SNAPSHOT">
-                                
-        
-        
-        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
-                                
-        
-        
-        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
-                
-        <wb-resource deploy-path="/" source-path="/src/main/webapp"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
-                                
-        
-        
-        <property name="java-output-path" value="/loja-marvall/build/classes"/>
-        <property name="context-root" value="loja-marvell"/>
-                            
-    
-    
-    </wb-module>
-            
-
->>>>>>> 19a24962be5d9aa5507f8c1ae3e513d8443d0944
 
 </project-modules>
