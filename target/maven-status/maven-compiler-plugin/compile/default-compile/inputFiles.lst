@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\repo-marvel\loja-marvell\src\br\com\zup\pgg\programaprincipal\repositoy\ClienteRepository.java
 C:\repo-marvel\loja-marvell\src\br\com\zup\pgg\programaprincipal\entity\Cliente.java
 C:\repo-marvel\loja-marvell\src\br\com\zup\pgg\programaprincipal\singleton\DbConnection.java
@@ -6,3 +7,13 @@ C:\repo-marvel\loja-marvell\src\br\com\zup\pgg\programaprincipal\ProgramaPrincip
 C:\repo-marvel\loja-marvell\src\br\com\zup\pgg\programaprincipal\controller\ClienteControllerServlet.java
 C:\repo-marvel\loja-marvell\src\br\com\zup\pgg\programaprincipal\dao\ClienteDao.java
 C:\repo-marvel\loja-marvell\src\br\com\zup\pgg\programaprincipal\service\ClienteService.java
+=======
+/home/fabio/repo/loja-marvell/src/main/java/br/com/zup/pgg/programaprincipal/singleton/DbConnection.java
+/home/fabio/repo/loja-marvell/src/main/java/br/com/zup/pgg/programaprincipal/entity/Cliente.java
+/home/fabio/repo/loja-marvell/src/main/java/br/com/zup/pgg/programaprincipal/dao/ClienteDao.java
+/home/fabio/repo/loja-marvell/src/main/java/br/com/zup/pgg/programaprincipal/service/ClienteService.java
+/home/fabio/repo/loja-marvell/src/main/java/br/com/zup/pgg/programaprincipal/repositoy/ClienteRepository.java
+/home/fabio/repo/loja-marvell/src/main/java/br/com/zup/pgg/programaprincipal/controller/ClienteControllerServlet.java
+/home/fabio/repo/loja-marvell/src/main/java/br/com/zup/pgg/programaprincipal/controller/ClienteController.java
+/home/fabio/repo/loja-marvell/src/main/java/br/com/zup/pgg/programaprincipal/ProgramaPrincipal.java
+>>>>>>> 19a24962be5d9aa5507f8c1ae3e513d8443d0944

@@ -1,1 +1,7 @@
-br\com\zup\pgg\programaprincipal\ProgramaPrincipal.class
+br/com/zup/pgg/programaprincipal/repositoy/ClienteRepository.class
+br/com/zup/pgg/programaprincipal/dao/ClienteDao.class
+br/com/zup/pgg/programaprincipal/singleton/DbConnection.class
+br/com/zup/pgg/programaprincipal/service/ClienteService.class
+br/com/zup/pgg/programaprincipal/entity/Cliente.class
+br/com/zup/pgg/programaprincipal/controller/ClienteController.class
+br/com/zup/pgg/programaprincipal/ProgramaPrincipal.class
