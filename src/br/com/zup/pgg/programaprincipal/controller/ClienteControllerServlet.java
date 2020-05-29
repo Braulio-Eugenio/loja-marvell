@@ -1,23 +1,9 @@
 package br.com.zup.pgg.programaprincipal.controller;
 
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.List;
-import java.util.stream.Collectors;
-
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
-import com.google.gson.Gson;
-
-import br.com.zup.pgg.programaprincipal.entity.Cliente;
-import br.com.zup.pgg.programaprincipal.service.ClienteService;
 
 
-public class ClienteControllerServlet {
+
+/*public class ClienteControllerServlet {
 	@WebServlet
 	public class ControllerCliente extends HttpServlet {
 		private static final String CATACTERE_POSICAO_INICIAL = "/";
@@ -26,7 +12,7 @@ public class ClienteControllerServlet {
 		ClienteService clienteService = new ClienteService();
 		Gson gson = new Gson();
 
-	/*	@Override
+		@Override
 		protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 			String json = req.getReader().lines().collect(Collectors.joining());
 			Cliente clienteRequest = gson.fromJson(json, Cliente.class);
@@ -36,7 +22,7 @@ public class ClienteControllerServlet {
 			out.print(clienteJson);
 			out.flush();
 
-		}*/
+		}
 
 		@Override
 		protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -74,4 +60,4 @@ public class ClienteControllerServlet {
 		}
 
 	}
-}
+} */
